@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg: #533cbb;
+    --text: #000;
+    --text2: #111;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.nav__logo{
+    font-size: 3rem;
+}
+.nav__link{
+    font-size: 1.4rem;
+}
+.nav__social i{
+    font-size: 2rem;
+}
+.flag__img{
+    cursor: pointer;
+}
+.flag__img:hover{
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
+/* swiper */
+.swiper-container {
+    width: 100%;
+    height: 62.5vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.slide-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.slide-content .h1 {
+    font-size: 3rem;
+}
+.slide-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.swiper-pagination-bullet {
+    background: var(--bg);
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--bg);
+}
+/* services */
+.services{
+    padding: 1rem 22%;
+}
+.services h1{
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+.heading{
+    text-align: center;
+    color: #222;
+}
+.service-box{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 6rem;
+}
+.service-box i{
+    font-size: 4rem;
+    color: dodgerblue;
+}
+.service-box p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-top: 1rem;
+}
+.hr{
+    color: #111;
+    margin-top: 7rem;
+    width: 100%;
+}
+/* thing */
+.herou .heading{
+    font-weight: 300;
+}
+.herou p{
+    margin-top: 5rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: var(--text);
+}
+.bar{
+    background-color: #c8c8c8;
+    color: white;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.bar .box i, h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.bar .box i{
+    font-size: 7rem;
+    color: blue;
+}
+.thing{
+    padding: 1rem 22%;
+}
+/* news */
+.news{
+    margin-top: 5rem;
+}
+.news .h1h{
+    font-size: 4rem;
+}
+.cards{
+    padding: 1rem 22%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.cards .card{
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #5850e4;
+    color: white;
+    padding: 5rem;
+}
+.cards .card .card-img img:hover{
+    filter: brightness(2);
+    transition: 0.5s all ease-in-out;
+}
+/* pagination */
+.pagination{
+    margin-top: 9rem;
+}
+.pagination a{
+    font-size: 2.4rem;
+    font-weight: bolder;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination .pag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.6rem;
+}
+.pagination .pag a{
+    display: flex;
+}
+.footer{
+    background-color: var(--bg);
+    margin-top: 5rem;
+    color: white;
+    padding: 1rem 22%;
+    line-height: 1.4;
+}
+.footer .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.4rem;
+}
+.footer .container-box{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.end{
+    text-align: center;
+}
+@media only screen and (max-width: 1600px) {
+    .hero .swiper-container .slide-content h1{
+        font-size: 3rem;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .hero .swiper-container .slide-content h1{
+        font-size: 2.4rem;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .services .service-box{
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+    }
+    .hero .swiper-container .slide-content h1{
+        font-size: 2.2rem;
+    }
+    .herou p{
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .services .service-box{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+    .heading{
+        font-size: 2.6rem;
+    }
+    .services i{
+        font-size: 3rem;
+    }
+    .hero .swiper-container .slide-content h1{
+        font-size: 1.8rem;
+    }
+    .herou p{
+        font-size: 1.5rem;
+    }
+    .bar .box i{
+        font-size: 4rem;
+    }
+    .bar .box h1{
+        font-size: 1.6rem;
+    }
+    .bar{
+        height: 20vh;
+    }
+    .news .heading{
+        font-size: 3rem;
+    }
+    .services .heading{
+        font-size: 3rem;
+    }
+    .cards .card img{
+        width: 300px;
+    }
+    .cards .card h2{
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .news .heading{
+        font-size: 2rem;
+    }
+    .services .heading{
+        font-size: 2rem;
+    }
+    .hero .swiper-container .slide-content h1{
+        font-size: 1.5rem;
+    }
+    .herou p{
+        font-size: 1.4rem;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .footer .box-container{
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    .footer .container-box{
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+    .cards .card img{
+        width: 250px;
+    }
+    .cards .card{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .heading{
+        font-size: 1.5rem;
+    }
+    .hero .swiper-container .slide-content h1{
+        font-size: 1.2rem;
+    }
+    .bar .box i{
+        font-size: 3rem;
+    }
+    .bar .box h1{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .heading{
+        font-size: 1.2rem;
+    }
+    .hero .swiper-container .slide-content h1{
+        font-size: 1rem;
+    }
+}
