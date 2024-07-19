@@ -262,3 +262,47 @@ a {
     column-gap: 3.5rem;
   }
 }
+.nav__dropdown {
+  position: relative;
+}
+
+.dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1rem 0.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: none; /* Hide the dropdown menu by default */
+  flex-direction: column;
+  margin-top: 0.6rem;
+  color: #000;
+}
+
+.dropdown__item {
+  padding: 1.2rem 2.4rem;
+}
+
+.dropdown__link {
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 130%;
+}
+.nav__dropdown:hover .dropdown__menu {
+  display: flex; /* Show the dropdown menu on hover */
+}
+
+/* Responsive styles for the dropdown menu */
+@media screen and (max-width: 1150px) {
+  .dropdown__menu {
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .dropdown__item {
+    padding: 1.2rem 1.2rem;
+  }
+}

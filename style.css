@@ -282,6 +282,9 @@ body{
     .cards .card h2{
         font-size: 1.6rem;
     }
+    .mass-img{
+        height: 20vh;
+    }
 }
 @media only screen and (max-width: 768px){
     .news .heading{
@@ -337,3 +340,77 @@ body{
         font-size: 1rem;
     }
 }
+/* fixed icons */
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    gap: 3rem;
+  }
+  .controls .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #533cbb;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem 0;
+    box-shadow: var(--box-shadow-1);
+    gap: 2.4rem;
+  }
+  .controls .control a{
+    font-size: 2rem;
+  }
+  .controls .control i {
+    font-size: 2rem;
+    color: #533cbb;
+    pointer-events: none;
+  }
+  .controls a .ri-instagram-line,.ri-facebook-line,.ri-tiktok-line{
+    font-size: 2.5rem;
+    gap: 2rem;
+    color: white;
+    background-color: var(--bg);
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  .controls a .ri-instagram-line,.ri-facebook-line,.ri-tiktok-line:hover{
+    transition: 0.5s all ease-in-out;
+    background-color: var(--bg);
+    color: whitesmoke;
+    transform: translateY(-5px);
+  }
+  .controls a{
+    gap: 1rem;
+  }
+  /* scroll to top btn */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden by default */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  #scrollToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  #scrollsition{
+    transition: 0.5s ease-in-out;
+  }
