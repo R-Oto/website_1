@@ -514,6 +514,7 @@ a {
   color: black;
   text-decoration: none;
   display: block;
+  font-size: 1.4rem;
   width: 130%;
 }
 .nav__dropdown:hover .dropdown__menu {
