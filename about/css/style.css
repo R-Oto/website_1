@@ -620,24 +620,27 @@ textarea{
 }
 .about-us .about-stuff p{
   margin-top: 2rem;
-  color: var(--bg);
-  font-weight: bold;
-  line-height: 1.2;
+  color: black;
+  font-weight: 500;
+  line-height: 1.4;
 }
 .about .about-btn{
   margin-top: 4rem;
 }
 .about .about-btn button{
-  border: 0;
+  border: 1px solid var(--bg);
   outline: 0;
-  background-color: orangered;
-  color: white;
+  /*background-color: orangered;*/
+  background-color: white;
+  color: black;
   cursor: pointer;
   padding: 12px 20px;
   transition: all 0.3s ease-in-out;
 }
 .about .about-btn button:hover{
-  background-color: orange;
+  /*background-color: orange;*/
+  background-color: var(--bg);
+  color: white;
 }
 .about .about-card .about-cards i{
   font-size: 3rem;
@@ -656,6 +659,10 @@ textarea{
 }
 .about-cards p{
   margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.about-us p{
+  color: black;
 }
 .about-cards i{
   text-align: center;
@@ -664,7 +671,7 @@ textarea{
   text-align: center;
 }
 .about .about-text p{
-  text-align: start;
+  text-align: center;
 }
 @media(max-width:1150px){
   .about .about-cards{
@@ -677,4 +684,9 @@ textarea{
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+.about-title h3{
+  font-size: 3.6rem;
+  color: var(--bg);
+  margin-top: 3rem;
 }

@@ -443,3 +443,65 @@ a {
     padding: 1.2rem 1.2rem;
   }
 }
+.project{
+  padding: 1rem 22%;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+.project .project-title h1{
+  color: var(--bg);
+  font-size: 4rem;
+}
+.project .projects{
+  margin-top: 7rem;
+  gap: 3rem;
+}
+.projects{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.projects .project-box1, .project-box2, .project-box3{
+  display: flex;
+  gap: 4rem;
+}
+.projects .project-box2, .project-box3{
+  margin-top: 7rem;
+}
+.projects img{
+  cursor: pointer;
+}
+.projects p{
+  font-size: 1.8rem;
+}
+.p2{
+  display: none;
+}
+@media(max-width:1024px){
+  .projects .p1{
+    display: none;
+  }
+  .projects .p2{
+    display: block;
+  }
+  .projects img{
+    width: 280px;
+    height: 160px;
+  }
+  .projects p{
+    font-size: 0.9rem;
+  }
+}
+@media(max-width:1500px){
+  .projects p{
+    font-size: 1.5rem;
+  }
+  .projects .project-box1, .project-box2, .project-box3{
+    flex-direction: column;
+  }
+  .projects .p1{
+    display: none;
+  }
+  .projects .p2{
+    display: block;
+  }
+}

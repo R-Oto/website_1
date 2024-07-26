@@ -558,13 +558,14 @@ textarea{
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  background: var(--text);
+  /*background: var(--text);*/
   backdrop-filter: blur(30px);
   flex-wrap: wrap;
-  border: 2px solid var(--bg);
+  border: 2px solid whitesmoke;
+  box-shadow: 0 0 20px whitesmoke;
 }
 .form-container form h1 {
-  color: #fff;
+  color: var(--bg);
   font-weight: 700;
   line-height: 2;
   margin-top: 20px;
@@ -580,18 +581,18 @@ textarea{
   font-size: 20px;
   margin-bottom: 10px;
   background: none;
-  border-bottom: 2px solid #fff;
-  color: #fff;
+  border-bottom: 2px solid #000;
+  color: #000;
 }
 .form-container form input::placeholder {
-  color: #fff;
+  color: #000;
 }
 .form-container form #lastName,
 .form-container form #mobile {
   margin-left: 20px;
 }
 .form-container form h4 {
-  color: #fff;
+  color: #000;
   font-weight: 300;
   width: 600px;
   margin-top: 20px;
@@ -599,8 +600,8 @@ textarea{
 .form-container form textarea {
   background: none;
   border: none;
-  border-bottom: 2px solid #fff;
-  color: #fff;
+  border-bottom: 2px solid #000;
+  color: #000;
   font-weight: 200;
   font-size: 20px;
   padding: 10px;
@@ -615,12 +616,11 @@ textarea{
 }
 .form-container form #button {
   border: none;
-  background: #fff;
-  border-radius: 5px;
+  background: blue;
   margin-top: 20px;
   font-weight: 600;
   font-size: 24px;
-  color: #000;
+  color: #fff;
   width: 200px;
   height: 60px;
   padding: 0;
@@ -629,7 +629,7 @@ textarea{
 }
 
 .form-container form #button:hover{
-    background: var(--bg);
+    background: blue;
     cursor: pointer;
     color: white;
     transition: .5s ease-in-out;
@@ -697,14 +697,5 @@ textarea{
 .form-container form #lastName,
 .form-container form #mobile {
     margin-left: 0;
-}
-.controls a i{
-  background-color: #000;
-}
-.controls a .ri-instagram-line{
-  background-color: #000;
-}
-.controls a .ri-tiktok-line:hover{
-  background-color: #000;
 }
 }
