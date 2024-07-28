@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.active{
+  color: gainsboro;
+}
 :root{
     --bg: #533cbb;
     --text: #000;
