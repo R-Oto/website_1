@@ -14,9 +14,6 @@ html{
 body{
     font-size: 1.6rem;
 }
-.nav ul li a span{
-    font-size: 1.4rem;
-}
 .nav__logo{
     font-size: 3rem;
 }
@@ -33,10 +30,7 @@ body{
     transform: translateY(-5px);
     transition: 0.5s ease-in-out;
 }
-.heading{
-  text-align: center;
-  color: #222;
-}
+
 .footer{
     background-color: var(--bg);
     margin-top: 5rem;
@@ -59,65 +53,7 @@ body{
 .end{
     text-align: center;
 }
-@media only screen and (max-width: 1024px){
-    .services .service-box{
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-    }
-    .heading{
-        font-size: 2.6rem;
-    }
-    .services i{
-        font-size: 3rem;
-    }
-    .hero .swiper-container .slide-content h1{
-        font-size: 1.8rem;
-    }
-    .herou p{
-        font-size: 1.5rem;
-    }
-    .bar .box i{
-        font-size: 4rem;
-    }
-    .bar .box h1{
-        font-size: 1.6rem;
-    }
-    .bar{
-        height: 20vh;
-    }
-    .news .heading{
-        font-size: 3rem;
-    }
-    .services .heading{
-        font-size: 3rem;
-    }
-    .cards .card img{
-        width: 300px;
-    }
-    .cards .card h2{
-        font-size: 1.6rem;
-    }
-    .frame-container iframe{
-      width: 876;
-      height: 424;  
-    }
-}
 @media only screen and (max-width: 768px){
-    .news .heading{
-        font-size: 2rem;
-    }
-    .services .heading{
-        font-size: 2rem;
-    }
-    .hero .swiper-container .slide-content h1{
-        font-size: 1.5rem;
-    }
-    .herou p{
-        font-size: 1.4rem;
-    }
-    .heading{
-        font-size: 2.5rem;
-    }
     .footer .box-container{
         flex-direction: column;
         gap: 2rem;
@@ -126,34 +62,6 @@ body{
     .footer .container-box{
         flex-direction: column;
         gap: 1.8rem;
-    }
-    .cards .card img{
-        width: 250px;
-    }
-    .cards .card{
-        font-size: 1.4rem;
-    }
-}
-@media only screen and (max-width: 600px){
-    .heading{
-        font-size: 1.5rem;
-    }
-    .hero .swiper-container .slide-content h1{
-        font-size: 1.2rem;
-    }
-    .bar .box i{
-        font-size: 3rem;
-    }
-    .bar .box h1{
-        font-size: 1.4rem;
-    }
-}
-@media only screen and (max-width: 400px){
-    .heading{
-        font-size: 1.2rem;
-    }
-    .hero .swiper-container .slide-content h1{
-        font-size: 1rem;
     }
 }
 /* fixed icons */
@@ -275,6 +183,12 @@ body{
   --bg: #533cbb;
   --text: #000;
   --text2: #111;
+}
+
+body {
+  font-family: var(--body-font);
+  /*font-size: var(--normal-font-size);*/
+  background-color: var(--white-color);
 }
 
 ul {
@@ -470,7 +384,7 @@ a {
   }
 
   .nav__link {
-    font-size: var(--normal-font-size);
+    font-size: 1.4rem;
   }
 
   .nav__link i {
@@ -533,169 +447,25 @@ a {
     padding: 1.2rem 1.2rem;
   }
 }
-.frame-container{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 15rem;
-  padding: 0;
-  display: flex;
-  border: 2px solid var(--bg);
-  border-radius: 1px;
-}
-.form-container{
-  margin: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-textarea{
-  resize: none;
-}
-.form-container form {
-  width: 670px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  border-radius: 15px;
-  /*background: var(--text);*/
-  backdrop-filter: blur(30px);
-  flex-wrap: wrap;
-  border: 2px solid whitesmoke;
-  box-shadow: 0 0 20px whitesmoke;
-}
-.form-container form h1 {
-  color: var(--bg);
-  font-weight: 700;
-  line-height: 2;
-  margin-top: 20px;
-  width: 500px;
-  text-align: center;
-}
-.form-container form input {
-  width: 300px;
-  height: 50px;
-  padding-left: 10px;
-  outline: none;
-  border: none;
-  font-size: 20px;
-  margin-bottom: 10px;
-  background: none;
-  border-bottom: 2px solid #000;
-  color: #000;
-}
-.form-container form input::placeholder {
-  color: #000;
-}
-.form-container form #lastName,
-.form-container form #mobile {
-  margin-left: 20px;
-}
-.form-container form h4 {
-  color: #000;
-  font-weight: 300;
-  width: 600px;
-  margin-top: 20px;
-}
-.form-container form textarea {
-  background: none;
-  border: 0;
-  border-bottom: 2px solid #000;
-  color: #000;
-  font-weight: 200;
-  font-size: 20px;
-  padding: 10px;
-  outline: 0px;
-  min-height: 48px;
-  max-height: 48px;
-  min-width: 610px;
-  max-width: 610px;
-}
-.form-container form h4 {
-  font-size: 20px;
-}
-.form-container form #button {
-  border: none;
-  background: blue;
-  margin-top: 20px;
-  font-weight: 600;
-  font-size: 24px;
-  color: #fff;
-  width: 200px;
-  height: 60px;
-  padding: 0;
-  margin-bottom: 30px;
-  transition: 0.3s;
-}
-
-.form-container form #button:hover{
-    background: blue;
-    cursor: pointer;
-    color: white;
-    transition: .5s ease-in-out;
-}
-.faqs{
+.text{
   padding: 1rem 22%;
-}
-.faq-container .detail{
+  gap: 3rem;
   margin-top: 3rem;
-  background-color: var(--bg);
-  color: white;
-  padding: 5rem;
-  text-align: baseline;
 }
-.faqs h2{
-  text-align: center;
+.text .texts .text-box{
+  gap: 3rem;
+  margin-top: 3rem;
 }
-.faqs summary, p{
-  margin-top: 1rem;
+.text .box1 h1{
+  font-size: 4rem;
 }
-@media (max-width: 800px) {
-  .form-container {
-    margin: 2rem;
+.text .text-box{
+  margin-top: 2rem;
 }
-.faqs{
-  width: 100%;
-  padding: 2rem;
+.text h1{
+  color: var(--bg);
+  font-size: 3.2rem;
 }
-.frame-container iframe{
-  height: 50vh;
-}
-
-.form-container form {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-}
-
-.form-container form h1 {
-    width: 100%;
-    font-size: 1.5rem;
-}
-
-.form-container form input {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 20px;
-}
-
-.form-container form h4 {
-    width: 100%;
-    margin-top: 10px;
-}
-
-.form-container form textarea {
-    min-width: 100%;
-    max-width: 100%;
-}
-
-.form-container form #button {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.form-container form #lastName,
-.form-container form #mobile {
-    margin-left: 0;
-}
-}
+.text .box1, .box2, .box3, p{
+  margin-top: 2rem;
+} 

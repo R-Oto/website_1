@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
-      <link rel="stylesheet" href="../css/style.css">
+      <!--<link rel="stylesheet" href="assets/css/styles.css">-->
+      <link rel="stylesheet" href="./css/main.css">
       <!-- remicicons -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
       <!-- swiper -->
@@ -21,24 +21,24 @@
 
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="../../index.html" class="nav__logo">Clicks</a>
+            <a href="../index.html" class="nav__logo">Clicks</a>
 
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="../../index.html" class="nav__link">
+                     <a href="../index.html" class="nav__link">
                         <span>მთავარი</span>
                      </a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="../../about/html/index.html" class="nav__link">
+                     <a href="#" class="nav__link">
                         <span>ჩვენს შესახებ</span>
                      </a>
                   </li>
-
+ 
                   <li class="nav__item">
-                     <a href="../../project/html/index.html" class="nav__link">
+                     <a href="#" class="nav__link">
                         <span>პროექტები</span>
                      </a>
                   </li>
@@ -52,7 +52,7 @@
                 -->
 
                 <li class="nav__item nav__dropdown">
-                    <a href="../../service/html/index.html" class="nav__link">
+                    <a href="#" class="nav__link">
                       <span>სერვისები</span>
                     </a>
                     <ul class="dropdown__menu">
@@ -64,7 +64,7 @@
                   </li>
 
                   <li class="nav__item">
-                     <a href="../../project/html/index.html" class="nav__link">
+                     <a href="#" class="nav__link">
                         <span>კონტაქტები</span>
                      </a>
                   </li>
@@ -91,7 +91,7 @@
                </div>
             -->
                <div class="flags">
-                <img src="../../images/ge.png" alt="" class="flag__img" width="20">
+                <img src="../images/ge.png" alt="" class="flag__img" width="20">
                </div>
             </div>
 
@@ -101,50 +101,39 @@
             </div>
          </nav>
       </header>
+      <!--==================== MAIN ====================-->
+      <main>
+        <!-- Insert page sections -->
 
-      <div class="form-container">
-         <form class="contact-form">
-            <h1>დაგვეკონტაქტე</h1>
-        <input type="text" id="firstName" placeholder="სახელი" required />
-        <input type="text" id="lastName" placeholder="გვარი" required />
-        <input type="email" id="email" placeholder="იმეილი" required />
-        <input type="text" id="mobile" placeholder="ტელეფონი" required />
-        <h4>შენი წერილი...</h4>
-        <textarea name="" id="" required></textarea>
-        <input type="submit" value="გაგზავნა" id="button" />
-         </form>
-      </div>
+        <article>
+         <section class="text">
+            <div class="texts">
+               <div class="text-box box1">
+                  <h1>რა არის სერვერი</h1>
+                  <p>
+                     სერვერი არის ძლიერი კომპიუტერი ან სისტემა, რომელიც უზრუნველყოფს რესურსებს, მონაცემებს, სერვისებს ან პროგრამებს სხვა კომპიუტერებს, რომლებიც ცნობილია როგორც კლიენტები, ქსელის საშუალებით. სერვერები შექმნილია იმისათვის, რომ მართონ, შეინახონ, გაგზავნონ და დაამუშავონ მონაცემები 24/7, რაც უზრუნველყოფს კლიენტის მოწყობილობებს საჭირო რესურსებზე ნებისმიერ დროს.
+                  </p>
+                  <p>
+                     სერვერები არის ციფრული სამყაროს ძალები, რომლებიც უზრუნველყოფენ საყრდენს ინტერნეტ სერვისებისთვის, მონაცემთა შენახვისა და აპლიკაციების ჰოსტინგისთვის. სერვერების სხვადასხვა ტიპისა და ფუნქციების გაგება გადამწყვეტია ბიზნესისა და პირებისთვის, რომლებიც ეყრდნობიან ტექნოლოგიას თავიანთი ოპერაციებისთვის.
+                  </p>
+               </div>
+               <div class="text-box box2">
+                  <h1>ბიზნესის ოპერაციები</h1>
+                  <p>
+                     სერვერები მხარს უჭერენ კრიტიკულ ბიზნეს ოპერაციებს, მათ შორის მონაცემთა მენეჯმენტს, კომუნიკაციას და აპლიკაციების ჰოსტინგს, რაც უზრუნველყოფს სამუშაო პროცესების გლუვ და ეფექტურ პროცესებს.
+                  </p>
+               </div>
+               <div class="text-box box3">
+                  <h1>უსაფრთხოება</h1>
+                  <p>
+                     სერვერები ახორციელებენ უსაფრთხოების ზომებს, როგორიცაა firewalls, დაშიფვრა და წვდომის კონტროლი, რათა დაიცვან მონაცემები და რესურსები არაავტორიზებული წვდომისა და კიბერ საფრთხეებისგან.
+                  </p>
+               </div>
+            </div>
+         </section>
+        </article>
 
-
-      <div class="frame-container">
-      <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487.6342467023505!2d44.74372681379294!3d41.77942693810663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446d001e503d6f%3A0xb53b5ed9826822c3!2s91%20luarsab%20andronikashvili%20street!5e0!3m2!1ska!2sge!4v1721400553622!5m2!1ska!2sge" width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <!--
-      <section class="faqs">
-         <div class="faq-container">
-         <h2>ხშირად დასმული კითხვები</h2>
-         <div class="detail">
-         <details>
-             <summary>როგორ დაგვეკონტაქტო?</summary>
-             <p>You can contact customer support by filling out the form above, calling us at (123) 456-7890, or emailing info@example.com.</p>
-         </details><br>
-         <details>
-             <summary>რომელ საათებში ვმუშაობთ?</summary>
-             <p>Our operating hours are Monday to Friday, 9:00 AM - 5:00 PM, and Saturday, 10:00 AM - 4:00 PM. We are closed on Sundays.</p>
-         </details><br>
-         <details>
-            <summary>სად ვმდებარეობთ?</summary>
-            <p>Our operating hours are Monday to Friday, 9:00 AM - 5:00 PM, and Saturday, 10:00 AM - 4:00 PM. We are closed on Sundays.</p>
-        </details><br>
-        <details>
-         <summary>რამდენი დრო დაჭირდება პასუხისთვის?</summary>
-         <p>Our operating hours are Monday to Friday, 9:00 AM - 5:00 PM, and Saturday, 10:00 AM - 4:00 PM. We are closed on Sundays.</p>
-     </details>
-      </div>
-      </div>
-     </section>
-   -->
-
+       
         <!-- footer -->
          
             <footer class="footer">
@@ -198,9 +187,9 @@
     <button id="scrollToTopBtn">↑</button>
       
       <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="./js/main.js"></script>
       <!-- app.js -->
-       <script src="../js/script.js"></script>
+       <!--<script src="./app.js"></script>-->
       <!-- swiper -->
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    </body>
