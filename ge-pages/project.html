@@ -8,12 +8,13 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!--=============== CSS ===============-->
-      <!--<link rel="stylesheet" href="assets/css/styles.css">-->
-      <link rel="stylesheet" href="./css/main.css">
       <!-- remicicons -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-      <!-- swiper -->
       <title>Clicks.ge</title>
+      <link rel="stylesheet" href="../assets/active.css">
+      <link rel="stylesheet" href="../assets/css/styles.css">
+      <link rel="stylesheet" href="../style.css">
+      <link rel="stylesheet" href="./style.css">
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -25,19 +26,19 @@
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="../index.html" class="nav__link active">
+                     <a href="../index.html" class="nav__link">
                         <span>მთავარი</span>
                      </a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="../about/html/index.html" class="nav__link">
+                     <a href="./about.html" class="nav__link">
                         <span>ჩვენს შესახებ</span>
                      </a>
                   </li>
  
                   <li class="nav__item">
-                     <a href="../project/html/index.html" class="nav__link">
+                     <a href="#" class="nav__link active">
                         <span>პროექტები</span>
                      </a>
                   </li>
@@ -51,19 +52,19 @@
                 -->
 
                 <li class="nav__item nav__dropdown">
-                    <a href="../service/html/index.html" class="nav__link">
+                    <a href="./service.html" class="nav__link">
                       <span>სერვისები</span>
                     </a>
                     <ul class="dropdown__menu">
                       <li class="dropdown__item"><a href="#" class="dropdown__link">სერვერები</a></li>
-                      <li class="dropdown__item"><a href="#" class="dropdown__link">პროდუქტები</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">ქსელები</a></li>
                       <li class="dropdown__item"><a href="#" class="dropdown__link">IP ტელეფონი</a></li>
                       <li class="dropdown__item"><a href="#" class="dropdown__link">კამერები და დაშვების სისტემები</a></li>
                     </ul>
                   </li>
 
                   <li class="nav__item">
-                     <a href="../contact/html/contact.html" class="nav__link">
+                     <a href="./contact.html" class="nav__link">
                         <span>კონტაქტები</span>
                      </a>
                   </li>
@@ -100,51 +101,38 @@
             </div>
          </nav>
       </header>
-      <!--==================== MAIN ====================-->
-      <main>
-        <!-- Insert page sections -->
+      
 
-         <article>
-        <section class="text">
-         <div class="texts">
-            <div class="text-box box1">
-               <h1>ქსელები</h1>
+      <div class="project">
+         <div class="project-title">
+            <h1>პროექტები</h1>
+         </div>
+         <div class="projects">
+            <div class="project-box1">
+               <img src="../images/card1.jpg" alt="">
                <p>
-                  ქსელი არის ურთიერთდაკავშირებული მოწყობილობების კრებული, როგორიცაა კომპიუტერები, სერვერები, სმარტფონები და IoT მოწყობილობები, რომლებიც ურთიერთობენ და უზიარებენ მონაცემებს ერთმანეთთან.
-               </p>
-               <p>
-                  ქსელები შეიძლება განსხვავდებოდეს ზომითა და სირთულით, დაწყებული მარტივი სახლის ქსელიდან დამთავრებული გლობალური ქსელებით, როგორიცაა ინტერნეტი.
-               </p>
-            </div>
-            <div class="text-box box2">
-               <h1>ლოკალური ქსელი</h1>
-               <p>
-                  LAN აკავშირებს მოწყობილობებს შეზღუდულ გეოგრაფიულ არეალში, როგორიცაა სახლი, ოფისი ან შენობა. ეს ხელს უწყობს მონაცემთა მაღალსიჩქარიან გადაცემას და რესურსების გაზიარებას დაკავშირებულ მოწყობილობებს შორის.
+                  ჩვენ ვართ IT მომსახურების პროვაიდერი კომპანია, რომელიც პროფესიონალურ მომსახურებას უწევს კომპანიებს, რითაც ვეხმარებით მათ ბიზნესის ეფექტურ წარმოებაში.
                </p>
             </div>
-            <div class="text-box box3">
-               <h1>უკაბელო ქსელები</h1>
-               <p>
-                  უკაბელო ქსელები იყენებენ რადიოტალღებს მოწყობილობების დასაკავშირებლად ფიზიკური კაბელის გარეშე. Wi-Fi და Bluetooth არის ჩვეულებრივი მაგალითები, რომლებიც გთავაზობთ მობილურობას და კომფორტს სახლებში, ოფისებში და საჯარო სივრცეებში.
+            <div class="project-box2">
+               <p class="p1">
+                  ჩვენს მიერ გაწეული მომსახურება მორგებულია, როგორც საშუალო, ისე მცირე ზომის ბიზნესებზე. ჩვენ ვპასუხობთ მათ მოთხოვნებს, ვეხმარებით ინდივიდუალური საჭიროებებიდან გამომდინარე და ვინარჩუნებთ ხანგრძლივ თანამშრომლობას მათთან.
+               </p>
+               <img src="../images/card2.jpg" alt="">
+               <p class="p2">
+                  ჩვენს მიერ გაწეული მომსახურება მორგებულია, როგორც საშუალო, ისე მცირე ზომის ბიზნესებზე. ჩვენ ვპასუხობთ მათ მოთხოვნებს, ვეხმარებით ინდივიდუალური საჭიროებებიდან გამომდინარე და ვინარჩუნებთ ხანგრძლივ თანამშრომლობას მათთან.
                </p>
             </div>
-            <div class="text-box box3">
-               <h1>კომუნიკაცია</h1>
+            <div class="project-box3">
+               <img src="../images/card3.jpg" alt="">
                <p>
-                  ქსელები ხელს უწყობს კომუნიკაციას ელექტრონული ფოსტის, შეტყობინებების და ვიდეო კონფერენციების საშუალებით, რაც საშუალებას აძლევს რეალურ დროში თანამშრომლობას და ინფორმაციის გაცვლას.
-               </p>
-            </div>
-            <div class="text-box box3">
-               <h1>უსაფრთხოება</h1>
-               <p>
-                  ქსელების კონფიგურაცია შესაძლებელია უსაფრთხოების ზომებით, რათა დაიცვან სენსიტიური ინფორმაცია და უზრუნველყონ მონაცემთა მთლიანობა და კონფიდენციალურობა.
+                  ჩვენ გთავაზობთ ყველა საჭირო სერვისს ერთ სივრცეში, რომელიც შექმნილია ბიზნესის პროდუქტიულობის გასაუმჯობესებლად. ჩვენი საქმიანობის ძირითადი სფეროა სერვერების, ქსელის და მონაცემთა ბაზების აწყობა და ადმინისტრირება, მათი მონიტორინგი, უსაფრთხოების უზრუნველყოფა გარკვეული სტანდარტების მიხედვით და გლობალური ტენდენციების შესაბამისად კომპანიების ტექნიკური უზრუნველყოფა.
                </p>
             </div>
          </div>
-      </section>
-   </article>
+      </div>
 
-       
+
         <!-- footer -->
          
             <footer class="footer">
@@ -193,14 +181,8 @@
          <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
             <i class="ri-tiktok-line"></i>
          </a>
-    </div>
-
+        </div>
     <button id="scrollToTopBtn">↑</button>
-      
-      <!--=============== MAIN JS ===============-->
-      <script src="./js/main.js"></script>
-      <!-- app.js -->
-       <!--<script src="./app.js"></script>-->
-      <!-- swiper -->
+      <script src="../app.js"></script>
    </body>
 </html>
