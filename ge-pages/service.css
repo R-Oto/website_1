@@ -33,39 +33,7 @@ body{
     transform: translateY(-5px);
     transition: 0.5s ease-in-out;
 }
-.footer{
-  background-color: var(--bg);
-  margin-top: 5rem;
-  color: white;
-  padding: 1rem 22%;
-  line-height: 1.4;
-}
-.footer .box-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1.4rem;
-}
-.footer .container-box{
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.end{
-  text-align: center;
-}
-@media only screen and (max-width: 768px){
-  .footer .box-container{
-      flex-direction: column;
-      gap: 2rem;
-      text-align: center;
-  }
-  .footer .container-box{
-      flex-direction: column;
-      gap: 1.8rem;
-  }
-}
+
 /* fixed icons */
 .controls {
     position: fixed;
