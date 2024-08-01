@@ -414,4 +414,48 @@ body{
   #scrollsition{
     transition: 0.5s ease-in-out;
   }
- 
+  .cards{
+    padding: 1rem 22%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.cards .card{
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #5850e4;
+    color: white;
+    padding: 5rem;
+}
+.cards .card .card-img img:hover{
+    filter: brightness(2);
+    transition: 0.5s all ease-in-out;
+}
+@media only screen and (max-width: 1400px) {
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .cards .card img{
+        width: 300px;
+    }
+    .cards .card h2{
+        font-size: 1.6rem;
+    }
+    .mass-img{
+        height: 20vh;
+    }
+}
+@media only screen and (max-width: 768px){
+    .cards .card img{
+        width: 250px;
+    }
+    .cards .card{
+        font-size: 1.4rem;
+    }
+}
