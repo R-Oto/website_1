@@ -459,3 +459,47 @@ body{
         font-size: 1.4rem;
     }
 }
+.map-box{
+    text-align: center;
+    margin-top: 5rem;
+
+}
+@media only screen and (max-width: 1648px){
+    .map-box iframe{
+        width: 1400px;
+    }
+}
+@media only screen and (max-width: 1448px){
+    .map-box iframe{
+        width: 1200px;
+    }
+}
+@media only screen and (max-width: 1248px){
+    .map-box iframe{
+        width: 1000px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .map-box iframe{
+        width: 800px;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .map-box iframe{
+        width: 700px;
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .map-box iframe{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .map-box iframe{
+        width: 396px;
+        height: 250px;
+    }
+}
