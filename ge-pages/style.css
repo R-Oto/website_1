@@ -65,7 +65,7 @@
     .about .about-cards{
       display: grid;
       grid-template-columns: 1fr;
-    }
+    } 
   }
   @media(max-width:1024px){
     .about .about-cards{
@@ -130,10 +130,16 @@
   }
   @media(max-width:1500px){
     .projects p{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     .projects .project-box1, .project-box2, .project-box3{
       flex-direction: column;
+    }
+    .project{
+      margin: 0;
+      padding: 1rem;
+      align-items: start;
+      text-align: start;
     }
     .projects .p1{
       display: none;
