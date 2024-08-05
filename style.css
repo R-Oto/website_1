@@ -484,23 +484,27 @@ body{
     .map-box iframe{
         width: 800px;
         height: 500px;
+        overflow: hidden;
     }
 }
 @media only screen and (max-width: 800px){
     .map-box iframe{
-        width: 700px;
-        height: 400px;
+        width: 600px;
+        height: 320px;
+        overflow: hidden;
     }
 }
 @media only screen and (max-width: 600px){
     .map-box iframe{
-        width: 500px;
-        height: 300px;
+        width: 425px;
+        height: 225px;
+        overflow: hidden;
     }
 }
 @media only screen and (max-width: 400px){
     .map-box iframe{
-        width: 396px;
-        height: 250px;
+        width: 312px;
+        height: 220px;
+        overflow: hidden;
     }
 }

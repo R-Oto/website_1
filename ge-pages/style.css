@@ -72,6 +72,14 @@
       display: grid;
       grid-template-columns: 1fr;
     }
+    .about{
+      margin: 1rem;
+      padding: 0;
+    }
+    .about .about-title h2{
+      text-align: left;
+    }
+    
   }
   .about-title h3{
     font-size: 3.6rem;
@@ -135,6 +143,10 @@
     .projects .project-box1, .project-box2, .project-box3{
       flex-direction: column;
     }
+    .project .projects img{
+      width: 500px;
+      height: 300px;
+    }
     .project{
       margin: 0;
       padding: 1rem;
@@ -146,5 +158,17 @@
     }
     .projects .p2{
       display: block;
+    }
+  }
+  @media(max-width:768px){
+    .project .projects img{
+      width: 400px;
+      height: 225px;
+    }
+  }
+  @media(max-width:576px){
+    .project .projects img{
+      width: 300px;
+      height: 150px;
     }
   }
