@@ -508,3 +508,8 @@ body{
         overflow: hidden;
     }
 }
+@media(max-width:540px){
+    .services .service-box{
+        grid-template-columns: 1fr;
+    }
+}
