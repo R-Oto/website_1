@@ -48,6 +48,14 @@ body{
     justify-content: space-around;
     gap: 1.4rem;
 }
+.footer .container-box p{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.footer h5{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
 .footer .container-box{
     margin-top: 2rem;
     display: flex;

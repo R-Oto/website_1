@@ -128,3 +128,89 @@ form.contacts input[type="submit"] {
         margin-top: 3rem;
     }
 }
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    gap: 3rem;
+  }
+  .controls .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #533cbb;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem 0;
+    box-shadow: var(--box-shadow-1);
+    gap: 2.8rem;
+  }
+  .controls .control a{
+    font-size: 2.4rem;
+  }
+  .controls .control i {
+    font-size: 2.4rem;
+    color: #533cbb;
+    pointer-events: none;
+  }
+  .controls a .ri-instagram-line,.ri-facebook-line,.ri-tiktok-line{
+    font-size: 2.5rem;
+    gap: 2rem;
+    color: white;
+    background-color: var(--bg);
+    border-radius: 50%;
+    padding: 1.2rem;
+  }
+  .controls a .ri-instagram-line,.ri-facebook-line,.ri-tiktok-line:hover{
+    transition: 0.5s all ease-in-out;
+    background-color: var(--bg);
+    color: whitesmoke;
+    transform: translateY(-5px);
+  }
+  .controls a{
+    gap: 1.2rem;
+  }
+@media(max-width:1024px){
+    .box-contact iframe{
+        width: 700px;
+    }
+}
+@media(max-width:968px){
+    .box-contact iframe{
+        width: 600px;
+    }
+}
+@media(max-width:932px){
+    .box-contact iframe{
+        width: 550px;
+    }
+}
+@media(max-width:800px){
+    .box-contact iframe{
+        width: 480px;
+    }
+}
+@media(max-width:768px){
+    .box-contact iframe{
+        width: 400px;
+    }
+}
+@media(max-width:600px){
+    .box-contact iframe{
+        width: 360px;
+    }
+}
+@media (max-width: 800px) {
+    .name-container {
+        flex-direction: column;
+    }
+}
