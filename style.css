@@ -528,3 +528,120 @@ body{
         grid-template-columns: 1fr;
     }
 }
+.service{
+    padding: 1rem 22%;
+    margin-top: 2rem;
+}
+.service-box h1{
+    color: var(--bg);
+    font-size: 4rem;
+}
+.service-box p{
+    margin-top: 3.2rem;
+    color: #111;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+.service .services i{
+    border: 2px solid var(--bg);
+    padding: 1.6rem;
+    background-color: var(--bg);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+}
+.services i:hover{
+    background-color: white;
+    color: var(--bg);
+    transition: 0.5s ease-in-out;
+}
+.service-list{
+    margin-top: 8rem;
+}
+.services{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.services h1{
+    font-size: 2rem;
+    color: var(--bg);
+    margin-top: 1rem;
+}
+.services p{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+.services .a-link{
+    margin-top: 2rem;
+}
+.services a{
+    color: var(--bg);
+    font-size: 2rem;
+}
+@media(max-width:1650px){
+    .services{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+@media(max-width:1250px){
+    .services{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+@media(max-width:800px){
+  .services{
+    grid-template-columns: 1fr;
+  }
+  .services p{
+    font-size: 1.6rem;
+  }
+  .service1, .service2, .service3, .service4,
+.service5, .service6, .service7, .service8{
+  height: 28vh;
+}
+}
+.service1, .service2, .service3{
+  margin-top: 5rem;
+}
+.service4, .service5, .service6{
+  margin-top: 5rem;
+}
+.service7, .service8{
+  margin-top: 5rem;
+}
+.service1, .service2, .service3, .service4,
+.service5, .service6, .service7, .service8{
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 40vh;
+  box-shadow: 0 0 20px whitesmoke;
+}
+.service .a-link a{
+  color: #111;
+  font-size: 1.5rem;
+}
+.service .a-link a:hover{
+  transition: 0.3s all ease-in-out;
+  color: var(--bg);
+  text-decoration: underline;
+}
+.services h1{
+  font-size: 1.6rem;
+}
+@media(max-width:1024px){
+  .service{
+    margin: 1rem;
+    padding: 0;
+  }
+}

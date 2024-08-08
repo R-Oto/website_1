@@ -165,6 +165,14 @@
       width: 400px;
       height: 225px;
     }
+    .project .project-title h1{
+      font-size: 3.6rem;
+    }
+  }
+  @media(max-width:600px){
+    .project .project-title h1{
+      font-size: 3rem;
+    }
   }
   @media(max-width:576px){
     .project .projects img{
@@ -172,3 +180,30 @@
       height: 150px;
     }
   }
+@media(max-width:1024px){
+  .about .about-title h2{
+    font-size: 3.6rem;
+  }
+  .about .about-title h3{
+    font-size: 3rem;
+  }
+  .about .about-stuff{
+    text-align: start;
+    align-items: start;
+  }
+}
+@media(max-width:600px){
+  .about .about-title h2{
+    font-size: 2.4rem;
+  }
+  .about p{
+    font-size: 1.2rem;
+  }
+  .about .about-title h3{
+    font-size: 1.6rem;
+  }
+  .about .about-stuff{
+    text-align: start;
+    align-items: start;
+  }
+}

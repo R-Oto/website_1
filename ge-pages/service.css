@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 :root{
     --bg: #533cbb;
     --text: #000;
@@ -19,6 +19,7 @@ body{
 }
 .nav__logo{
     font-size: 3rem;
+    font-weight: 800;
 }
 .nav__link{
     font-size: 1.4rem;
@@ -41,7 +42,7 @@ body{
     top: 50%;
     right: 3%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
@@ -526,5 +527,21 @@ a {
   .service{
     margin: 1rem;
     padding: 0;
+  }
+}
+@media(max-width:768px){
+  .service-box h1{
+    font-size: 3.6rem;
+  }
+  .service-box p{
+    font-size: 1.4rem;
+  }
+}
+@media(max-width:600px){
+  .service-box h1{
+    font-size: 3rem;
+  }
+  .service-box p{
+    font-size: 1.2rem;
   }
 }
