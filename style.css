@@ -96,7 +96,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
-    gap: 6rem;
+    gap: 8rem;
 }
 .service-box i{
     font-size: 4rem;
@@ -107,6 +107,9 @@ body{
     font-weight: 500;
     color: var(--text);
     margin-top: 1rem;
+}
+.service-box-2{
+    gap: 11rem;
 }
 .hr{
     color: #111;
