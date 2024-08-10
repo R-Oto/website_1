@@ -173,6 +173,10 @@ body{
     color: white;
     padding: 5rem;
 }
+.cards .card img{
+    width: 475px;
+    height: 320px;    
+}
 .cards .card .card-img img:hover{
     filter: brightness(2);
     transition: 0.5s all ease-in-out;
@@ -462,6 +466,7 @@ body{
 @media only screen and (max-width: 1024px){
     .cards .card img{
         width: 300px;
+        height: 180px;
     }
     .cards .card h2{
         font-size: 1.6rem;
@@ -646,5 +651,8 @@ body{
   .service{
     margin: 1rem;
     padding: 0;
+  }
+  .bar .box i{
+    display: none;
   }
 }
