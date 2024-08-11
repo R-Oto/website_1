@@ -13,13 +13,15 @@ html{
 }
 body{
     font-size: 1.6rem;
+    font-family: 'Roboto';
 }
 .nav ul li a span{
     font-size: 1.4rem;
 }
 .nav__logo{
     font-size: 3rem;
-    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    font-family: 100;
 }
 .nav__link{
     font-size: 1.4rem;
