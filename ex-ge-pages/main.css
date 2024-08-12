@@ -481,3 +481,24 @@ a {
 .text .box1, .box2, .box3, p{
   margin-top: 2rem;
 } 
+.ban{
+  margin-top: 1rem;
+}
+.nav__logo img{
+  width: 180px;
+}
+@media(max-width:1280px){
+  .nav__logo img{
+      width: 150px;
+  }
+}
+@media(max-width:1250px){
+  .nav__logo img{
+      width: 120px;
+  }
+}
+@media(max-width:1024px){
+  .nav__logo img{
+      width: 100px;
+  }
+}

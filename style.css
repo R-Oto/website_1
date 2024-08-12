@@ -836,3 +836,24 @@ form.contacts input[type="submit"] {
         width: 280px;
     }
 }
+.ban{
+    margin-top: 1rem;
+}
+.nav__logo img{
+    width: 180px;
+}
+@media(max-width:1280px){
+    .nav__logo img{
+        width: 150px;
+    }
+}
+@media(max-width:1250px){
+    .nav__logo img{
+        width: 120px;
+    }
+}
+@media(max-width:1024px){
+    .nav__logo img{
+        width: 100px;
+    }
+}
