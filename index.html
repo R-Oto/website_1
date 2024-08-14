@@ -32,7 +32,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&family=Oswald:wght@200..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-      <title>Clicks.ge | მთავარი გვერდი</title>
+      <title>Clicks.ge | მთავარი გვერდი - აიტი აუთსორსინგი</title>
    </head> 
    <body>
       <!--==================== HEADER ====================-->
@@ -218,8 +218,33 @@
         </section>
 
         <div class="bar">
+            <br><br>
             <div class="box">
-                <h1><i class="fa-solid fa-check-double"></i>იმუშავე შეფერხების გარეშე, შექმენი უპირატესობა</h1>
+                <h1>სერვისების კალკულატორი</h1>
+                <p>გამოთვალე სერვისების მომსახურეობა</p>
+            </div>
+            <div class="boxed">
+                <div class="bar-box-container">
+                    <h2>კომპიუტერები</h2>
+                    <input type="number" class="inp-num" id="computers" placeholder="რაოდენობა">
+                    <p id="comp-price"></p>
+                </div>
+                <div class="bar-box-container">
+                    <h2>პრინტერები</h2>
+                    <input type="number" class="inp-num" id="printers" placeholder="რაოდენობა">
+                    <p id="print-price"></p>
+                </div>
+                <div class="bar-box-container">
+                    <h2>სერვერები</h2>
+                    <input type="number" class="inp-num" id="servers" placeholder="რაოდენობა">
+                    <p id="server-price"></p>
+                </div>
+            </div>
+            <div class="calculate">
+                <button type="button" onclick="calculatePrice()">გამოთვალე</button>
+                <div class="result">
+                    <h3 id="total-price">0 ლარი</h3>
+                </div>
             </div>
         </div>
 
@@ -326,6 +351,33 @@
       <!-- app.js -->
        <script src="./app.js"></script>
       <!-- swiper -->
+        
+        <script>
+            const prices = {
+                computers: 25.00,
+                printers: 125.00,
+                servers: 55.00
+             };
+             
+             // Display prices
+             
+            // Assign fixed prices
+            document.getElementById('comp-price').textContent = `კომპიუტერის ფასი: ${prices.computers} ლარი`;
+            document.getElementById('print-price').textContent = `პრინტერის ფასი: ${prices.printers} ლარი`;
+            document.getElementById('server-price').textContent = `სერვერის ფასი: ${prices.servers} ლარი`;
+            
+            function calculatePrice() {
+               const compQuantity = parseInt(document.getElementById('computers').value) || 0;
+               const printQuantity = parseInt(document.getElementById('printers').value) || 0;
+               const serverQuantity = parseInt(document.getElementById('servers').value) || 0;
+            
+               const totalPrice = (compQuantity * prices.computers) +
+                                  (printQuantity * prices.printers) +
+                                  (serverQuantity * prices.servers);
+            
+               document.getElementById('total-price').textContent = `${totalPrice.toFixed(2)} gel`;
+            }
+        </script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    </body>
 </html>
