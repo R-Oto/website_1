@@ -480,7 +480,46 @@ body{
 }
 @media only screen and (max-width: 1400px) {
     .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .cards p{
+        font-size: 1.5rem;
+    }
+    .cards h2{
+        font-size: 2rem;
+    }
+}
+@media(max-width:1280px){
+    .cards .card img {
+        max-width: 100%;
+        height: auto;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 3rem;
+    }
+}
+@media(max-width:912px){
+    .cards{
         grid-template-columns: 1fr;
+        padding: 0 12rem;
+    }
+    .cards img{
+        width: 400px;
+    }
+}
+@media(max-width:768px){
+    .cards{
+        padding: 0 5rem;
+    }
+}
+@media(max-width:400px){
+    .cards p {
+        font-size: 1rem;
+    }
+    .cards img{
+        height: 200px; /* Adjust this value as needed */
+        object-fit: cover; /* Ensures the image fits within the specified height */
     }
 }
 @media only screen and (max-width: 1024px){
