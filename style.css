@@ -192,10 +192,10 @@ body{
     font-size: 4rem;
 }
 .cards{
-    padding: 1rem 22%;
+    padding: 1rem 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 8rem;
     align-items: center;
     justify-content: center;
 }
@@ -206,11 +206,13 @@ body{
     text-align: center;
     background-color: #5850e4;
     color: white;
-    padding: 5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 .cards .card img{
     width: 475px;
-    height: 320px;    
+    height: 320px; 
+    margin-bottom: 1rem;
 }
 .cards .card .card-img img:hover{
     filter: brightness(2);
@@ -365,6 +367,7 @@ body{
     }
     .cards .card{
         font-size: 1.4rem;
+        gap: 2rem;
     }
 }
 @media only screen and (max-width: 600px){
@@ -458,12 +461,13 @@ body{
     transition: 0.5s ease-in-out;
   }
   .cards{
-    padding: 1rem 22%;
+    padding: 1rem 11%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 10rem;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8rem;
 }
 .cards .card{
     margin-top: 3rem;

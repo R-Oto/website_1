@@ -243,7 +243,7 @@
             <div class="calculate">
                 <button type="button" onclick="calculatePrice()">Calculate</button>
                 <div class="result">
-                    <h3 id="total-price">0 gel</h3>
+                    <h3 id="total-price">0 dolar</h3>
                 </div>
             </div>
         </div>
@@ -304,13 +304,13 @@
                     <div class="box">
                         <i class="fa-solid fa-location-dot"></i>
                         <h5>
-                            Tbilisi, Nutsubidze 4 <br> Plato, 7a Building
+                            Vazha-Pshavela N71 <br>
                         </h5>
                     </div>
                     <div class="box">
                         <i class="fa-regular fa-clock"></i>
                         <h5>mon-fry: 10:00-19:00 <br>
-                        sat-sun: 10:00-18:00</h5>
+                        </h5>
                         
                     </div>
                     <div class="box">
@@ -338,7 +338,7 @@
             <i class="ri-instagram-line"></i>
          </a>
 
-         <a href="https://github.com/" target="_blank" class="nav__social-link">
+         <a href="https://www.facebook.com/profile.php?id=100090943947073" target="_blank" class="nav__social-link">
             <i class="ri-facebook-line"></i>
          </a>
 
@@ -360,9 +360,9 @@
          // Display prices
          
         // Assign fixed prices
-        document.getElementById('comp-price').textContent = `Computer Price: ${prices.computers} gel`;
-        document.getElementById('print-price').textContent = `Printer Price: ${prices.printers} gel`;
-        document.getElementById('server-price').textContent = `Server Price: ${prices.servers} gel`;
+        document.getElementById('comp-price').textContent = `Computer Price: ${prices.computers} dolar`;
+        document.getElementById('print-price').textContent = `Printer Price: ${prices.printers} dolar`;
+        document.getElementById('server-price').textContent = `Server Price: ${prices.servers} dolar`;
         
         function calculatePrice() {
            const compQuantity = parseInt(document.getElementById('computers').value) || 0;
@@ -373,7 +373,7 @@
                               (printQuantity * prices.printers) +
                               (serverQuantity * prices.servers);
         
-           document.getElementById('total-price').textContent = `${totalPrice.toFixed(2)} gel`;
+           document.getElementById('total-price').textContent = `${totalPrice.toFixed(2)} dolar`;
         }
     </script>
       <!-- swiper -->
