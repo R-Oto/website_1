@@ -117,14 +117,8 @@ body{
     width: 100%;
 }
 /* thing */
-.herou .heading{
-    font-weight: 300;
-}
-.herou p{
-    margin-top: 5rem;
-    font-weight: 400;
-    font-size: 1.7rem;
-    color: var(--text);
+.thing p{
+    margin-top: 3rem;
 }
 .bar{
     background-color: #414040;
@@ -375,7 +369,7 @@ body{
         font-size: 1.5rem;
     }
     .hero .swiper-container .slide-content h1{
-        font-size: 1.2rem;
+        font-size: 1.35rem;
     }
 }
 @media only screen and (max-width: 400px){
@@ -383,7 +377,7 @@ body{
         font-size: 1.2rem;
     }
     .hero .swiper-container .slide-content h1{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 /* fixed icons */

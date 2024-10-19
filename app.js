@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
           prevEl: '.swiper-button-prev',
        },
        autoplay: {
-          delay: 5000, // Set a reasonable delay
+          delay: 25000, // Set a reasonable delay
           disableOnInteraction: false,
        },
        effect: 'slide',
